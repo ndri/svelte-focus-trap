@@ -6,6 +6,12 @@
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
   "types": "svelte-focus-trap.d.ts",
+  "exports": {
+    ".": {
+      "types": "./svelte-focus-trap.d.ts",
+      "svelte": "./src/index.js"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w"
